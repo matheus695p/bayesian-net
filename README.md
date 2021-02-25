@@ -31,6 +31,11 @@ Resultado del método de interpretación Los distintos métodos de interpretaci�
 Acá la lista de modelos interpretables 
 ![modelos interpretables](https://github.com/matheus695p/counterfactual-explanations/blob/main/images/modelos_interpretables.png?raw=true)
 
+## Model Agnostic Methods
+
+Separar las explicaciones del modelo de aprendizaje automático (= métodos de interpretación agnósticos del modelo) tiene algunas ventajas (Ribeiro, Singh y Guestrin 201626). La gran ventaja de los métodos de interpretación independientes del modelo sobre los específicos del modelo es su flexibilidad. Los desarrolladores de aprendizaje automático son libres de usar cualquier modelo de aprendizaje automático que les guste cuando los métodos de interpretación se pueden aplicar a cualquier modelo. Todo lo que se base en una interpretación de un modelo de aprendizaje automático, como una interfaz gráfica o de usuario, también se vuelve independiente del modelo de aprendizaje automático subyacente. Por lo general, no solo uno, sino muchos tipos de modelos de aprendizaje automático se evalúan para resolver una tarea, y cuando se comparan modelos en términos de interpretabilidad, es más fácil trabajar con explicaciones independientes del modelo, ya que el mismo método se puede usar para cualquier tipo. del modelo.
+
+
 
 
 # Fuentes
