@@ -27,6 +27,10 @@ Resultado del método de interpretación Los distintos métodos de interpretaci�
 
 ¿Modelo específico o agnóstico del modelo? Las herramientas de interpretación específicas del modelo están limitadas a clases de modelos específicas. La interpretación de las ponderaciones de regresión en un modelo lineal es una interpretación específica del modelo, ya que, por definición, la interpretación de los modelos intrínsecamente interpretables es siempre específica del modelo. Herramientas que solo funcionan para la interpretación de p. Ej. Las redes neuronales son específicas del modelo. Las herramientas agnósticas del modelo se pueden usar en cualquier modelo de aprendizaje automático y se aplican después de que el modelo haya sido entrenado (post hoc). Estos métodos agnósticos suelen funcionar analizando pares de entrada y salida de características. Por definición, estos métodos no pueden tener acceso a los componentes internos del modelo, como los pesos o la información estructural.
 
+Modelos interpretables
+![modelos interpretables](https://github.com/matheus695p/counterfactual-explanations/blob/main/images/modelos_interpretables.png?raw=true)
+
+
 
 # Fuentes
 
