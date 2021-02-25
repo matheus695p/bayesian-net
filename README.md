@@ -33,7 +33,17 @@ Acá la lista de modelos interpretables
 
 ## Model Agnostic Methods
 
-Separar las explicaciones del modelo de aprendizaje automático (= métodos de interpretación agnósticos del modelo) tiene algunas ventajas (Ribeiro, Singh y Guestrin 201626). La gran ventaja de los métodos de interpretación independientes del modelo sobre los específicos del modelo es su flexibilidad. Los desarrolladores de aprendizaje automático son libres de usar cualquier modelo de aprendizaje automático que les guste cuando los métodos de interpretación se pueden aplicar a cualquier modelo. Todo lo que se base en una interpretación de un modelo de aprendizaje automático, como una interfaz gráfica o de usuario, también se vuelve independiente del modelo de aprendizaje automático subyacente. Por lo general, no solo uno, sino muchos tipos de modelos de aprendizaje automático se evalúan para resolver una tarea, y cuando se comparan modelos en términos de interpretabilidad, es más fácil trabajar con explicaciones independientes del modelo, ya que el mismo método se puede usar para cualquier tipo. del modelo.
+Separar las explicaciones del modelo de ml (métodos de interpretación agnostic-model) tiene algunas ventajas. La gran ventaja de los métodos de interpretación independientes del modelo sobre los específicos del modelo es su flexibilidad. Los desarrolladores de ml son libres de usar cualquier modelo de aprendizaje automático que les guste cuando los métodos de interpretación se pueden aplicar a cualquier modelo.
+Todo lo que se base en una interpretación de un modelo de aprendizaje automático, como una interfaz gráfica o de usuario, también se vuelve independiente del modelo de aprendizaje automático subyacente. Por lo general, no solo uno, sino muchos tipos de modelos de aprendizaje automático se evalúan para resolver una tarea, y cuando se comparan modelos en términos de interpretabilidad, es más fácil trabajar con explicaciones independientes del modelo, ya que el mismo método se puede usar para cualquier tipo. del modelo.
+
+Una alternativa a los métodos de interpretación independientes del modelo es usar solo modelos interpretables, los que están más arriba, lo que a menudo tiene la gran desventaja de que el rendimiento predictivo se pierde en comparación con otros modelos y se limita a un tipo de modelo.
+La otra alternativa es utilizar model-specific-interpretations. La desventaja de esto es que también lo vincula a un tipo de modelo y será difícil cambiar a otro.
+
+Los aspectos deseables de un sistema de model-agnostic:
+
+- Flexibilidad del modelo: El método de interpretación puede funcionar con cualquier modelo de aprendizaje automático, como bosques aleatorios y redes neuronales profundas.
+- Flexibilidad de la explicación: No está limitado a una determinada forma de explicación. En algunos casos puede resultar útil tener una fórmula lineal, en otros casos un gráfico con características importantes.
+- Flexibilidad de representación: El sistema de explicación debería poder utilizar una representación de características diferente al modelo que se explica.
 
 
 
