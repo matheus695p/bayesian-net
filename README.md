@@ -90,7 +90,11 @@ directed acyclic graph construido por el cliente, de como el cree que se afectan
 </p>
 
 
-Los resultados de los counterfactuals quedan privados, pero queda el método de como hacerlos una vez discretizados los datos.
+Los resultados de los counterfactuals quedan privados, pero queda el método de como hacerlos una vez discretizados los datos :).
+
+
+
+# Apunte de estudio
 
 ## Redes Bayesianas
 
@@ -113,8 +117,6 @@ Desventajas:
 * Esta no es (desafortunadamente) una forma de automatizar completamente la inferencia causal.
 
 
-
-# Apunte de estudio
 
 ## Taxonomía de los métodos de interpretabilidad 
 
