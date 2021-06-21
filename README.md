@@ -92,6 +92,16 @@ directed acyclic graph construido por el cliente, de como el cree que se afectan
 
 Los resultados de los counterfactuals quedan privados, pero queda el método de como hacerlos una vez discretizados los datos :).
 
+Ejemplo:
+
+<p align="center">
+  <img src="./results/counterfactuals/num equipos prod.png">
+</p>
+
+P (numero de ciclos | numero_equipos_prod=5) -- > P (numero de ciclos | numero_equipos_prod=elevado numero de camiones) 
+
+-- > Resp: Un mayor número de equipos no te asegura tener más cantidad de ciclos.
+
 
 
 # Apunte de estudio
