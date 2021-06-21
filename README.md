@@ -1,10 +1,117 @@
 # counterfactual-explanations
 
-[![Building Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+![Build Status](https://www.repostatus.org/badges/latest/concept.svg)
 
-Con el proposito de estudiar modelos de interpretabilidad en machine learning cree este repo para hacer un roadmap que me permita llegar entender el estado del arte de interpretabilidad de modelos de deep learning.
+# causalnex
 
-Para esto me crearé un apunte que secaré de distintas fuentes ver (última parte)
+Ejemplo del uso de causalnex, para tener un ejemplo por si en un futuro lo necesito, entrenamiento de una red bayesiana e inferencia (counterfactuals) a preguntas que tenía el cliente del funcionamiento de la faena.
+
+## Organización del repositorio
+
+```sh
+│   .gitignore
+│   README.md
+│   requirements.txt
+├───codes
+│   ├───bayesian-network
+│   │       domain_expertise.py    ----> Red bayesiana desde experiencia del PO
+│   │       from_data.py           ----> Red bayesiana desde los datos
+│   └───scm
+│           direct_acyclic_graph.py
+├───data
+│   └───mine
+│           ads_combined.pkl
+│           correlations.xlsx
+├───documents
+├───results
+│   └───graphs
+│           correlations.png
+│           correlations_simple_case.png
+│           from_data1.png
+│           from_data11.png
+│           from_data2.png
+│           from_data22.png
+│           from_data33.png
+│           funcionamiento_logico.png
+│           graph_causal.png
+└───src
+    ├───analytics
+    │       metrics.py
+    │       transformations.py
+    │       __init__.py
+    ├───config
+    │       config.py
+    ├───eda
+    │       exploratory_data_analysis.py
+    │       __init__.py
+    ├───preprocessing
+    │       cleaning.py
+    │       discretizer.py
+    │       preprocessing.py
+    │       __init__.py
+    └───utils
+            utils.py
+            visualizations.py
+            __init__.py
+
+```
+## Librerias necearias
+
+```sh
+$ git clone https://github.com/matheus695p/causalnex.git
+$ cd causalnex
+$ pip install -r requirements.txt
+
+```
+# Caso de minería 
+
+Para empezar se hizo un análisis de correlaciones para ver la relación entre las variables (pearson, spearman, kendall) con esto me fije en las variables,
+que tenían correlación para construir las hipotesis de causalidad.
+
+Este es el grafo de la operación, en donde se busca hacer counterfactuals a la red una vez entrenada, resolviendo preguntas que tenía el PO, ver, para entender las preguntas.
+
+```sh
+├───codes
+│   ├───bayesian-network
+│   │       domain_expertise.py 
+```
+
+directed acyclic graph construido por el cliente, de como el cree que se afectan los kpi's en el botadero.
+
+
+<p align="center">
+  <img src="./results/graphs/edges.png">
+</p>
+
+
+<p align="center">
+  <img src="./results/graphs/funcionamiento_logico.png">
+</p>
+
+
+Los resultados de los counterfactuals quedan privados, pero queda el método de como hacerlos una vez discretizados los datos.
+
+## Redes Bayesianas
+
+Ventajas e inconvenientes de las redes bayesianas Ventajas (desde la documentación de causalnex)
+
+Ventajas:
+
+* Las redes bayesianas ofrecen una representación gráfica que es razonablemente interpretable y fácilmente explicable
+* Las relaciones capturadas entre variables en una red bayesiana son más complejas pero, con suerte, más informativas que un modelo convencional
+* Los modelos pueden reflejar simultáneamente información estadísticamente significativa (aprendida de los datos) y experiencia en el dominio
+* Se pueden utilizar múltiples métricas para medir la importancia de las relaciones y ayudar a identificar el efecto de acciones específicas
+* Ofrece un mecanismo para sugerir counterfactual actions y combinar acciones sin supuestos agresivos de independencia de las variables.
+
+
+Desventajas:
+
+
+* Es posible que la granularidad del modelado tenga que ser menor. Sin embargo, esto puede no ser necesario o puede ejecutarse en tangente a otras técnicas que proporcionan precisión pero son menos interpretables
+* La complejidad computacional es mayor. Sin embargo, esto puede compensarse con una selección cuidadosa de funciones y una política de discretización menos granular, pero a expensas del poder predictivo
+* Esta no es (desafortunadamente) una forma de automatizar completamente la inferencia causal.
+
+
 
 # Apunte de estudio
 
