@@ -1,6 +1,7 @@
-# counterfactual-explanations
+# bayesian-net
 
 ![Build Status](https://www.repostatus.org/badges/latest/concept.svg)
+
 
 # causalnex
 
