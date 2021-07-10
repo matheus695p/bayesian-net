@@ -100,7 +100,7 @@ Ejemplo:
 
 P (numero de ciclos | numero_equipos_prod=5) -- > P (numero de ciclos | numero_equipos_prod=elevado numero de camiones) 
 
--- > Resp: Un mayor número de equipos no te asegura tener más cantidad de ciclos.
+-- > Resp: Un mayor número de equipos no te asegura tener más cantidad de ciclos (los equipos se interfieren entre ellos), en cambio un número bajo de equipos si hace más probable la disminuición de ciclos --> Existe número óptimo de equipos a buscar.
 
 
 
