@@ -5,7 +5,7 @@
 
 # causalnex
 
-Ejemplo del uso de causalnex, para tener un ejemplo por si en un futuro lo necesito, entrenamiento de una red bayesiana e inferencia (counterfactuals) a preguntas que tenía el cliente del funcionamiento de la faena.
+Ejemplo del uso de causalnex, para tener un ejemplo por si en un futuro lo necesito, entrenamiento de una red bayesiana e inferencia (counterfactuals) a preguntas de un proceso minero.
 
 ## Organización del repositorio
 
