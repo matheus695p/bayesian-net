@@ -112,10 +112,10 @@ Ventajas e inconvenientes de las redes bayesianas Ventajas (desde la documentaci
 
 Ventajas:
 
-* Las redes bayesianas ofrecen una representación gráfica que es razonablemente interpretable y fácilmente explicable
-* Las relaciones capturadas entre variables en una red bayesiana son más complejas pero, con suerte, más informativas que un modelo convencional
-* Los modelos pueden reflejar simultáneamente información estadísticamente significativa (aprendida de los datos) y experiencia en el dominio
-* Se pueden utilizar múltiples métricas para medir la importancia de las relaciones y ayudar a identificar el efecto de acciones específicas
+* Las redes bayesianas ofrecen una representación gráfica que es razonablemente interpretable y fácilmente explicable.
+* Las relaciones capturadas entre variables en una red bayesiana son más complejas pero, con suerte, más informativas que un modelo convencional.
+* Los modelos pueden reflejar simultáneamente información estadísticamente significativa (aprendida de los datos) y experiencia en el dominio.
+* Se pueden utilizar múltiples métricas para medir la importancia de las relaciones y ayudar a identificar el efecto de acciones específicas.
 * Ofrece un mecanismo para sugerir counterfactual actions y combinar acciones sin supuestos agresivos de independencia de las variables.
 
 
